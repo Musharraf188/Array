@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Even or add</title>
+</head>
+<body>
+    <input type="Number" placeholder="Enter a Number" id="inputId">
+    <button onclick="addNumber()">Press Here!</button>
+    <h1>Check the is odd or even</h1>
+    <h3 id="demo"></h3>
+</body>
+<script>
+    const userInput = document.getElementById('inputId');
+    const paraElement = document.getElementById('demo');
+    function addNumber(){
+userInput.value % 2==0 ?   paraElement.innerHTML = userInput.value + "  " + "is Even number" :  paraElement.innerHTML = userInput.value + " - " + "Is Odd Number..!"
+    }
+</script>
+
+</html>
