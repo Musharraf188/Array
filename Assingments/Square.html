@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Print Square</title>
 </head>
 <body>
-    <h2>Square pattern in javascript</h2>
+    <h2>Print Square Using js</h2>
+    <input type="number" id="uInput">
+    <button onclick="addNumber()">Print!</button>
+    <p id="demo"></p>
 </body>
 <script>
-    let n =5;  //you can take input from prompt
-    let string ="";
-    for(let i =0; i < n; i++){
-        for(let j =0; j < n; j++){
-            string += "*";
+    function addNumber(){
+        const n =Number (document.getElementById('uInput').value)
+        let string = '';
+        for(i=0;i< n ; i++){
+            for(j=0; j<n; j++){
+string+="*"
+            }
+            string+="</br>";
         }
-        string+="</br>"
+        document.getElementById("demo").innerHTML =string;
     }
-    document.write(string);
+
 </script>
 </html>
