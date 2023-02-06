@@ -8,10 +8,16 @@
 </head>
 <body>
     <h1>print Hallow start in JavaScript</h1>
+    <input type="number" id="userInput">
+    <button onclick="addNumber()">Show Square!</button>
+    <p id="demo"></p>
     <script>
-        let n = 5; // row or column count
 // defining an empty string
-let string = "";
+
+function addNumber(){
+ 
+  const n = Number(document.getElementById("userInput").value)
+  let string = "";
 
 for(let i = 0; i < n; i++) { // external loop //this loop print a line of squre
   for(let j = 0; j < n; j++) { // internal loop // this loop print num of star *
@@ -30,8 +36,10 @@ for(let i = 0; i < n; i++) { // external loop //this loop print a line of squre
   // newline after each row
   string += "\n";
 }
+
 // printing the string
-console.log(string);
+document.getElementById("demo").innerHTML=string;
+}
     </script>
 </body>
 </html>
