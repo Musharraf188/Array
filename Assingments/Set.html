@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Object</title>
+</head>
+<body>
+    <h1>A JavaScript Set is a collection of unique values.
+
+        Each value can only occur once in a Set.</h1>
+        <p id="demo"></p>
+</body>
+<script>
+    // First method
+    // const numbers =[1,2,3,1,4,5,6,2,];
+    // const uniqueValue =[...new Set(numbers)];
+    // document.getElementById("demo").innerHTML =uniqueValue;
+
+    // Second Method
+    const letters =new Set(['a', 'b' , 'c', 'd']);
+text="";
+    for(const x of letters.value){
+text+=x;
+    }
+    document.getElementById("demo").innerHTML=text;
+</script>
+</html>
