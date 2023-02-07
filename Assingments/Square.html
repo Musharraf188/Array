@@ -16,11 +16,11 @@
     function addNumber(){
         const n =Number (document.getElementById('uInput').value)
         let string = '';
-        for(i=0;i< n ; i++){
-            for(j=0; j<n; j++){
-string+="*"
-            }
-            string+="</br>";
+        for(i=0;i< n ; i++){ // this loop for printing line
+          for(j=0;j<n;j++){
+            
+          }
+            string+="*";
         }
         document.getElementById("demo").innerHTML =string;
     }
